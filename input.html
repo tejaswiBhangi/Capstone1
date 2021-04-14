@@ -1,0 +1,14 @@
+<p style="font-family:verdana">
+{% if itemCode %}
+The Item Code you entered is {{itemCode}}
+Update it in the form below:
+{% else %}
+Please enter your item code:
+{% endif %}
+</p>
+
+<form method = "POST"> 
+	{{ form.hidden_tag() }}
+	{{ form.inputCode.label }} {{form.inputCode()}}
+	{{ form.submit() }}
+</form>

@@ -1,0 +1,14 @@
+<p style="font-family:verdana">
+
+Please enter your sale information:
+
+</p>
+
+<form method = "POST"> 
+	{{ form.hidden_tag() }}
+	{{ form.itemCode.label }} {{form.itemCode()}}
+	{{ form.empId.label }} {{form.empId()}}
+	{{ form.date.label }} {{form.date()}}
+	{{ form.quantity.label }} {{form.quantity()}}
+	{{ form.submit() }}
+</form>
